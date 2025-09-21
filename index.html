@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini AI Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Gemini AI Assistant</h1>
+            <p>Ask me anything or explore generative AI topics below</p>
+        </header>
+
+        <div class="chat-section">
+            <div class="input-section">
+                <input 
+                    type="text" 
+                    id="userInput" 
+                    placeholder="Type your question here..."
+                    maxlength="500"
+                >
+                <button id="submitBtn" onclick="askQuestion()">Submit</button>
+            </div>
+
+            <div class="quick-questions">
+                <h3>Generative AI Topics:</h3>
+                <div class="button-grid">
+                    <button class="quick-btn" onclick="askPredefined('Explain what generative AI is, how it differs from traditional AI models, describe GANs and their role, and list potential use cases in web applications')">
+                        🧠 Understanding Generative AI
+                    </button>
+                    <button class="quick-btn" onclick="askPredefined('What are the key components of a web application that integrates generative AI? How do you ensure efficient backend processing? Why are APIs important for connecting AI models with web interfaces?')">
+                        ⚙️ Technical Aspects
+                    </button>
+                    <button class="quick-btn" onclick="askPredefined('Design a basic architecture for an AI-powered art web application. What programming languages and frameworks would you use and why? How would you train and deploy a generative AI model for real-time web use?')">
+                        🏗️ Implementation & Development
+                    </button>
+                    <button class="quick-btn" onclick="askPredefined('What are the ethical concerns with generative AI in web applications? How do you ensure data privacy? What methods can mitigate biases in AI models?')">
+                        🛡️ Ethics & Challenges
+                    </button>
+                    <button class="quick-btn" onclick="askPredefined('What strategies optimize performance of generative AI web applications? How do you handle scalability with growing user base? What role do cloud services play in scaling AI applications?')">
+                        🚀 Performance & Scalability
+                    </button>
+                    <button class="quick-btn" onclick="askPredefined('What design principles create intuitive UI for generative AI apps? How do you gather and incorporate user feedback? What methods ensure accessibility in AI-powered web applications?')">
+                        👥 User Experience
+                    </button>
+                </div>
+            </div>
+
+            <div class="response-section">
+                <h3>Response:</h3>
+                <div id="responseArea">
+                    <p class="placeholder">Ask a question to get started!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
